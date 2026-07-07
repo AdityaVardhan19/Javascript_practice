@@ -26,7 +26,7 @@ function showMessage(){
 
 }*/
 
-let heading = document.getElementById("title")
+/*let heading = document.getElementById("title")
 let info = document.getElementById("name")
 let button = document.getElementById("btn")
 
@@ -42,4 +42,43 @@ function showInfo(){
     info.style.color = "darkblue"
     info.style.backgroundColor = "gold"
 
-}
+}*/
+
+// Variables
+
+let studentName = "Aditya Vardhan";
+let age = 22;
+let course = "Full Stack Development";
+let college = "Seshadri Rao Gudlavalleru Engineering College";
+let skills = "HTML, CSS, JavaScript";
+let placed = true;
+
+
+// Display Values
+
+console.log("Student Name :", studentName);
+
+console.log("Age :", age);
+
+console.log("Course :", course);
+
+console.log("College :", college);
+
+console.log("Skills :", skills);
+
+console.log("Placed :", placed);
+
+
+// Display Data Types
+
+console.log("Data Type of studentName :", typeof studentName);
+
+console.log("Data Type of age :", typeof age);
+
+console.log("Data Type of course :", typeof course);
+
+console.log("Data Type of college :", typeof college);
+
+console.log("Data Type of skills :", typeof skills);
+
+console.log("Data Type of placed :", typeof placed);
