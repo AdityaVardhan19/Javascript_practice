@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Hoisting</title>
+
+</head>
+
+<body>
+
+    <button onclick="window.location.href='../index.html'">
+        🏠 Home
+    </button>
+
+    <center>
+
+        <h1>JavaScript Hoisting</h1>
+
+        <p>
+
+            Hoisting is JavaScript's default behavior of moving declarations to the top
+            before executing the code.
+
+        </p>
+
+    </center>
+
+    <hr>
+
+    <h2>Topics Covered</h2>
+
+    <ul>
+
+        <li>What is Hoisting?</li>
+
+        <li>Memory Creation Phase</li>
+
+        <li>Execution Phase</li>
+
+        <li>Variable Hoisting (var)</li>
+
+        <li>Temporal Dead Zone (TDZ)</li>
+
+        <li>Function Declaration Hoisting</li>
+
+        <li>Function Expression Hoisting</li>
+
+    </ul>
+
+    <hr>
+
+    <h2>1. What is Hoisting?</h2>
+
+    <p>
+
+        Hoisting is JavaScript's behavior of moving variable and function declarations
+        to the top of their scope before code execution.
+
+    </p>
+
+<pre>
+console.log(a);
+
+var a = 10;
+</pre>
+
+    <hr>
+
+    <h2>2. Memory Creation Phase</h2>
+
+    <p>
+
+        Before executing the program, JavaScript allocates memory for variables and functions.
+
+    </p>
+
+<pre>
+var → undefined
+
+let / const → TDZ
+
+Function Declaration → Entire function stored
+</pre>
+
+    <hr>
+
+    <h2>3. Execution Phase</h2>
+
+    <p>
+
+        JavaScript executes the code line by line and assigns values to variables.
+
+    </p>
+
+<pre>
+var a = 10;
+</pre>
+
+    <hr>
+
+    <h2>4. Temporal Dead Zone (TDZ)</h2>
+
+    <p>
+
+        Variables declared using <b>let</b> and <b>const</b> cannot be accessed before
+        their declaration.
+
+    </p>
+
+<pre>
+console.log(a);
+
+let a = 10;
+</pre>
+
+    <hr>
+
+    <h2>5. Function Declaration Hoisting</h2>
+
+    <p>
+
+        Function declarations are completely hoisted and can be called before they are declared.
+
+    </p>
+
+<pre>
+show();
+
+function show(){
+
+}
+</pre>
+
+    <hr>
+
+    <h2>6. Function Expression Hoisting</h2>
+
+    <p>
+
+        Function expressions are not fully hoisted because only the variable declaration
+        is hoisted.
+
+    </p>
+
+<pre>
+display();
+
+var display = function(){
+
+}
+</pre>
+
+    <hr>
+
+    <h2>Memory Flow</h2>
+
+<pre>
+
+        JavaScript Code
+
+               │
+
+               ▼
+
+      Memory Creation Phase
+
+               │
+
+               ▼
+
+        Execution Phase
+
+</pre>
+
+    <hr>
+
+    <h2>JavaScript Examples</h2>
+
+    <ol>
+
+        <li>Variable Hoisting</li>
+
+        <li>Temporal Dead Zone</li>
+
+        <li>Function Declaration</li>
+
+        <li>Function Expression</li>
+
+        <li>Homework Exercises</li>
+
+    </ol>
+
+    <hr>
+
+    <h2>Practice</h2>
+
+    <ol>
+
+        <li>Predict the output of var hoisting.</li>
+
+        <li>Predict the output of let hoisting.</li>
+
+        <li>Predict the output of function declaration.</li>
+
+        <li>Predict the output of function expression.</li>
+
+    </ol>
+
+    <hr>
+
+    <h2>Learning Outcomes</h2>
+
+    <ul>
+
+        <li>Understand Hoisting.</li>
+
+        <li>Understand Memory Creation Phase.</li>
+
+        <li>Understand Execution Phase.</li>
+
+        <li>Understand Temporal Dead Zone (TDZ).</li>
+
+        <li>Predict JavaScript Output.</li>
+
+    </ul>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
