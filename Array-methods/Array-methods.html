@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Array Methods</title>
+
+</head>
+
+<body>
+
+<button onclick="window.location.href='../index.html'">
+🏠 Home
+</button>
+
+<center>
+
+<h1>JavaScript Array Methods</h1>
+
+<p>
+
+Array methods make working with arrays easier.
+Instead of writing loops repeatedly, JavaScript provides built-in methods to transform, filter and calculate data.
+
+</p>
+
+</center>
+
+<hr>
+
+<h2>Topics Covered</h2>
+
+<ul>
+
+<li>Why Array Methods?</li>
+
+<li>map()</li>
+
+<li>filter()</li>
+
+<li>reduce()</li>
+
+<li>Difference between map(), filter(), reduce()</li>
+
+</ul>
+
+<hr>
+
+<h2>1. Why Array Methods?</h2>
+
+<p>
+
+Array methods reduce code and make programs easier to read.
+
+</p>
+
+<pre>
+
+Products
+
+↓
+
+Modify Prices
+
+↓
+
+Select Products
+
+↓
+
+Calculate Total
+
+</pre>
+
+<hr>
+
+<h2>2. map()</h2>
+
+<p>
+
+map() creates a new array by modifying every element.
+
+</p>
+
+<pre>
+
+array.map((item)=>{
+
+return item;
+
+})
+
+</pre>
+
+<hr>
+
+<h2>3. filter()</h2>
+
+<p>
+
+filter() returns only the elements that satisfy a condition.
+
+</p>
+
+<pre>
+
+array.filter((item)=>{
+
+return condition;
+
+})
+
+</pre>
+
+<hr>
+
+<h2>4. reduce()</h2>
+
+<p>
+
+reduce() combines all array elements into one final value.
+
+</p>
+
+<pre>
+
+array.reduce((total,item)=>{
+
+return total+item;
+
+},0)
+
+</pre>
+
+<hr>
+
+<h2>5. Difference</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+
+<th>Method</th>
+
+<th>Purpose</th>
+
+<th>Returns</th>
+
+</tr>
+
+<tr>
+
+<td>map()</td>
+
+<td>Modify</td>
+
+<td>New Array</td>
+
+</tr>
+
+<tr>
+
+<td>filter()</td>
+
+<td>Select</td>
+
+<td>New Array</td>
+
+</tr>
+
+<tr>
+
+<td>reduce()</td>
+
+<td>Calculate</td>
+
+<td>Single Value</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>JavaScript Examples</h2>
+
+<ol>
+
+<li>map()</li>
+
+<li>filter()</li>
+
+<li>reduce()</li>
+
+<li>Real-time Product Example</li>
+
+<li>Shopping Cart Total</li>
+
+</ol>
+
+<hr>
+
+<h2>Mini Project</h2>
+
+<ul>
+
+<li>Shopping Website Products</li>
+
+<li>Calculate Final Bill</li>
+
+</ul>
+
+<hr>
+
+<h2>Practice Tasks</h2>
+
+<ol>
+
+<li>Add 18% GST using map().</li>
+
+<li>Display Passed Students using filter().</li>
+
+<li>Calculate Total Cart Price using reduce().</li>
+
+<li>Display Only Product Names.</li>
+
+</ol>
+
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
